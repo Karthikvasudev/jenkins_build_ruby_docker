@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to my Guestbook!</title>
+    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/css/application.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>
+          Welcome to my Guestbook!
+          <small><marquee>Please sign it</marquee><small>
+          <img src="/img/notepad.gif" />
+          <img src="/img/ie_logo.gif" />
+        </h1>
+      </div>
+
+      <%= yield %>
+    </div>
+  </body>
+</html>
