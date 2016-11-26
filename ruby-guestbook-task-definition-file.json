@@ -1,0 +1,18 @@
+{
+  "family": "guestbook-taskdefinitions",
+  "containerDefinitions": [
+    {
+      "name": "guestbook",
+      "image": "672721203026.dkr.ecr.eu-central-1.amazonaws.com/provision/ruby-docker-build:${VERSION}",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 9292,
+          "hostPort": 8000
+        }
+      ],
+      "memory": 256,
+      "cpu": 100
+    }
+  ]
+}
