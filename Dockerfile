@@ -14,6 +14,7 @@ USER guestbook
 # Create and switch to the repo dir
 ENV SRC_DIR /home/guestbook/app
 ENV DATABASE_URL postgres://postgres:postgres123@guestbook.cr3qnf94ta63.eu-central-1.rds.amazonaws.com
+#This is provisioned on AWS Elasticache cluster mode for high availablity.
 ENV REDIS_HOST guestbook.9q7hng.ng.0001.euc1.cache.amazonaws.com
 RUN mkdir $SRC_DIR
 WORKDIR $SRC_DIR
